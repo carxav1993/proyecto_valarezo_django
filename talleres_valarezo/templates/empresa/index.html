@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block descripcion %}
+{% endblock descripcion %}
+
+{% block titulo %}-Inicio{% endblock titulo %}
+
+{% block contenido %}
+<h2><img src="{{empresa.logo.url}}" alt="Logo talleres valarezo"></h2>
+<h2 class="titulo_index">{{empresa.nombre}}</h2>
+{% endblock contenido %}
+
+{% block scripts %}
+	<script>
+	$("#inicio").removeClass("active");
+	$("#nosotros").removeClass("active");
+	$("#servicios").removeClass("active");
+	$("#contactenos").removeClass("active");
+
+	$("#inicio").addClass("active");
+	</script>
+{% endblock scripts %}

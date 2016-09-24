@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block titulo %}-Contáctenos{% endblock titulo %}
+
+{% block contenido %}
+	<div class="row featurette">
+		<div class="container">
+		    <div class="col-md-12">
+		      <h3>Aquí va el cuadro de información</h3>
+		    </div>
+		    <div class="col-md-12">
+		      <h3>Aqui va el formulario</h3>
+		    </div>
+	    </div>
+    </div>
+{% endblock contenido %}
+
+{% block scripts %}
+	<script>
+	$("#inicio").removeClass("active");
+	$("#nosotros").removeClass("active");
+	$("#servicios").removeClass("active");
+	$("#contactenos").removeClass("active");
+
+	$("#contactenos").addClass("active");
+	</script>
+{% endblock scripts %}

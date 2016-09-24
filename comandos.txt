@@ -1,0 +1,13 @@
+en la consola:
+
+python ..\Scripts\django-admin.py startproject nombre_proyecto (crear un proyecto)
+
+python ..\..\..\Scripts\django-admin.py startproject nombre_proyecto (crear una app dento de la carpeta apps)
+
+
+python manage.py runserver --settings=talleres_valarezo.settings.local  //para poder correr el servidor de prueba con las configuraciones locales
+
+python manage.py migrate --settings=talleres_valarezo.settings.local  //para poder efectuar migraciones las configuraciones locales
+
+python manage.py createsuperuser --settings=talleres_valarezo.settings.local  //para crear un superusuario y poder efectuar acceder al panel de administracion
+
